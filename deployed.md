@@ -28,8 +28,8 @@ Key files:
 4. **Start command:**
    - `python app.py`
 5. **Environment variables:**
-   - `GROQ_API_KEY=...`
-   - `VOYAGE_API_KEY=...`
+   - `GROQ_API_KEY=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`
+   - `VOYAGE_API_KEY=pa-96ldveRZkEXgcIRZUt8sKi5n88rk8W4ZVKepbPiw12L`
    - `LLM_MODEL=llama-3.1-70b-versatile`
    - `EMBEDDING_MODEL=voyage-3`
 6. **Data:**
