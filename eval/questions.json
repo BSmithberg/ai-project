@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "topic": "pto",
+    "question": "How many PTO days do employees receive per year?"
+  },
+  {
+    "id": 2,
+    "topic": "remote_work",
+    "question": "Are employees allowed to work fully remote?"
+  },
+  {
+    "id": 3,
+    "topic": "benefits",
+    "question": "Does the company offer health insurance to full-time employees?"
+  },
+  {
+    "id": 4,
+    "topic": "conduct",
+    "question": "What is the policy on workplace harassment?"
+  },
+  {
+    "id": 5,
+    "topic": "security",
+    "question": "What should employees do if they suspect a security breach?"
+  }
+]

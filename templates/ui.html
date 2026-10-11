@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI RAG Chat</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+
+    <input id="question" type="text" placeholder="Type your question here" style="width:300px;">
+    <button onclick="send()">Send</button>
+
+    <pre id="answer"></pre>
+
+    <script>
+        async function send() {
+            const q = document.getElementById("question").value;
+
+            try {
+                const res = await fetch("/chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ question: q })
+                });
+
+                const data = await res.json();
+                document.getElementById("answer").textContent =
+                    JSON.stringify(data, null, 2);
+            } catch (err) {
+                document.getElementById("answer").textContent =
+                    "Error contacting server: " + err;
+            }
+        }
+    </script>
+</body>
+</html>
