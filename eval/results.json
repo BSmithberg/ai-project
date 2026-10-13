@@ -1,0 +1,1002 @@
+{
+  "summary": {
+    "questions_evaluated": 30,
+    "average_latency_seconds": 0.306,
+    "p50_latency_seconds": 0.245,
+    "p95_latency_seconds": 0.271,
+    "average_citation_score": 0.0,
+    "average_groundedness_score": 1.0
+  },
+  "results": [
+    {
+      "id": 1,
+      "topic": "pto",
+      "question": "How many Paid Time OFF (PTO) days do employees receive per year?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Paid Time Off (PTO) Policy The company provides paid time off to eligible full-time employees. Full-time employees receive 20 PTO days per calendar year. PTO may be used for vacation, personal business, illness, or other approved absences. Employees should submit PTO requests through the company's timekeeping system and obtain manager approval whenever possible. Unused PTO will be handled according to applicable company policy and local regulations. Questions regarding PTO balances and requests should be directed to Human Resources.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\12_paid_time_off_policy.txt"
+          }
+        },
+        {
+          "text": "Benefits Policy The company provides a comprehensive benefits package to all full-time employees. Eligible full-time employees receive: - Medical health insurance - Dental insurance - Vision insurance - Life insurance - Access to employee assistance programs Health insurance coverage becomes effective on the first day of the month following employment eligibility requirements. Part-time employees may not be eligible for all benefit programs. Employees should contact Human Resources with questions regarding benefits enrollment, coverage, or eligibility.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\11_benefits_policy.txt"
+          }
+        },
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt"
+          }
+        }
+      ],
+      "latency_seconds": 2.086,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 2,
+      "topic": "remote_work",
+      "question": "Are employees allowed to work fully remote?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "source": "data\\policies_raw\\03_remote_work_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt"
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.255,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 3,
+      "topic": "benefits",
+      "question": "Does the company offer health insurance to full-time employees?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Benefits Policy The company provides a comprehensive benefits package to all full-time employees. Eligible full-time employees receive: - Medical health insurance - Dental insurance - Vision insurance - Life insurance - Access to employee assistance programs Health insurance coverage becomes effective on the first day of the month following employment eligibility requirements. Part-time employees may not be eligible for all benefit programs. Employees should contact Human Resources with questions regarding benefits enrollment, coverage, or eligibility.",
+          "meta": {
+            "source": "data\\policies_raw\\11_benefits_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Paid Time Off (PTO) Policy The company provides paid time off to eligible full-time employees. Full-time employees receive 20 PTO days per calendar year. PTO may be used for vacation, personal business, illness, or other approved absences. Employees should submit PTO requests through the company's timekeeping system and obtain manager approval whenever possible. Unused PTO will be handled according to applicable company policy and local regulations. Questions regarding PTO balances and requests should be directed to Human Resources.",
+          "meta": {
+            "source": "data\\policies_raw\\12_paid_time_off_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.232,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 4,
+      "topic": "conduct",
+      "question": "What is the policy on workplace harassment?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company prohibits harassment, discrimination, and hostile behavior based on race, gender, religion, age, disability, sexual orientation, or any protected characteristic. Employees experiencing or witnessing inappropriate conduct must report it to HR. Retaliation against individuals who report concerns is strictly prohibited. Violations may result in termination.",
+          "meta": {
+            "source": "data\\policies_raw\\08_anti_harassment_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\03_remote_work_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.226,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 5,
+      "topic": "security",
+      "question": "What should employees do if they suspect a security breach?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "All employees must protect company information systems from unauthorized access. Passwords must meet complexity requirements and be changed every 90 days. Multi‑factor authentication is required for all administrative accounts. Employees must not install unapproved software or connect personal storage devices to company systems. Security incidents must be reported immediately to the IT Security Team.",
+          "meta": {
+            "source": "data\\policies_raw\\04_information_security_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company is committed to protecting personal and sensitive data. Employees must collect only the minimum data necessary for business operations. Personal data must be stored securely and accessed only by authorized personnel. Data transfers to external parties require approval and must follow contractual and regulatory requirements. Data breaches must be reported within one hour of discovery.",
+          "meta": {
+            "source": "data\\policies_raw\\06_data_privacy_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.211,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 6,
+      "topic": "conduct",
+      "question": "What are employees expected to do when interacting with coworkers and customers?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "source": "data\\policies_raw\\03_remote_work_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.246,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 7,
+      "topic": "conduct",
+      "question": "What happens if an employee violates the code of conduct?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company prohibits harassment, discrimination, and hostile behavior based on race, gender, religion, age, disability, sexual orientation, or any protected characteristic. Employees experiencing or witnessing inappropriate conduct must report it to HR. Retaliation against individuals who report concerns is strictly prohibited. Violations may result in termination.",
+          "meta": {
+            "source": "data\\policies_raw\\08_anti_harassment_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "Employees must follow all posted safety guidelines and use required protective equipment. Emergency exits must remain unobstructed. In the event of fire, employees must evacuate the building and assemble at designated meeting points. Workplace injuries must be reported immediately. Only trained personnel may operate machinery or safety‑critical equipment.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\07_workplace_safety_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.257,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 8,
+      "topic": "attendance",
+      "question": "What are the standard working hours for employees?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Paid Time Off (PTO) Policy The company provides paid time off to eligible full-time employees. Full-time employees receive 20 PTO days per calendar year. PTO may be used for vacation, personal business, illness, or other approved absences. Employees should submit PTO requests through the company's timekeeping system and obtain manager approval whenever possible. Unused PTO will be handled according to applicable company policy and local regulations. Questions regarding PTO balances and requests should be directed to Human Resources.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\12_paid_time_off_policy.txt"
+          }
+        },
+        {
+          "text": "All employees must protect company information systems from unauthorized access. Passwords must meet complexity requirements and be changed every 90 days. Multi‑factor authentication is required for all administrative accounts. Employees must not install unapproved software or connect personal storage devices to company systems. Security incidents must be reported immediately to the IT Security Team.",
+          "meta": {
+            "source": "data\\policies_raw\\04_information_security_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.23,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 9,
+      "topic": "attendance",
+      "question": "What should an employee do if they are going to be late for work?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt"
+          }
+        },
+        {
+          "text": "Employees must follow all posted safety guidelines and use required protective equipment. Emergency exits must remain unobstructed. In the event of fire, employees must evacuate the building and assemble at designated meeting points. Workplace injuries must be reported immediately. Only trained personnel may operate machinery or safety‑critical equipment.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\07_workplace_safety_policy.txt"
+          }
+        },
+        {
+          "text": "The Company maintains plans to ensure critical operations continue during disruptions. Employees must follow communication protocols during emergencies. IT systems will be restored according to priority tiers. Essential personnel may be required to work from alternate locations. Regular drills will be conducted to validate readiness.",
+          "meta": {
+            "source": "data\\policies_raw\\09_business_continuity_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.269,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 10,
+      "topic": "attendance",
+      "question": "Who should employees notify when absent from work?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Employees must follow all posted safety guidelines and use required protective equipment. Emergency exits must remain unobstructed. In the event of fire, employees must evacuate the building and assemble at designated meeting points. Workplace injuries must be reported immediately. Only trained personnel may operate machinery or safety‑critical equipment.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\07_workplace_safety_policy.txt"
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.263,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 11,
+      "topic": "remote_work",
+      "question": "What equipment is required for remote work?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "source": "data\\policies_raw\\03_remote_work_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt"
+          }
+        },
+        {
+          "text": "The Company maintains plans to ensure critical operations continue during disruptions. Employees must follow communication protocols during emergencies. IT systems will be restored according to priority tiers. Essential personnel may be required to work from alternate locations. Regular drills will be conducted to validate readiness.",
+          "meta": {
+            "source": "data\\policies_raw\\09_business_continuity_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.273,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 12,
+      "topic": "remote_work",
+      "question": "Are remote employees required to maintain a productive work environment?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "source": "data\\policies_raw\\03_remote_work_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt"
+          }
+        },
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.235,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 13,
+      "topic": "security",
+      "question": "How should employees respond to suspected security incidents?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Employees must follow all posted safety guidelines and use required protective equipment. Emergency exits must remain unobstructed. In the event of fire, employees must evacuate the building and assemble at designated meeting points. Workplace injuries must be reported immediately. Only trained personnel may operate machinery or safety‑critical equipment.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\07_workplace_safety_policy.txt"
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "All employees must protect company information systems from unauthorized access. Passwords must meet complexity requirements and be changed every 90 days. Multi‑factor authentication is required for all administrative accounts. Employees must not install unapproved software or connect personal storage devices to company systems. Security incidents must be reported immediately to the IT Security Team.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\04_information_security_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.237,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 14,
+      "topic": "security",
+      "question": "What should employees do to protect company information?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company is committed to protecting personal and sensitive data. Employees must collect only the minimum data necessary for business operations. Personal data must be stored securely and accessed only by authorized personnel. Data transfers to external parties require approval and must follow contractual and regulatory requirements. Data breaches must be reported within one hour of discovery.",
+          "meta": {
+            "source": "data\\policies_raw\\06_data_privacy_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "All employees must protect company information systems from unauthorized access. Passwords must meet complexity requirements and be changed every 90 days. Multi‑factor authentication is required for all administrative accounts. Employees must not install unapproved software or connect personal storage devices to company systems. Security incidents must be reported immediately to the IT Security Team.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\04_information_security_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.238,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 15,
+      "topic": "acceptable_use",
+      "question": "Can company computers be used for personal purposes?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt"
+          }
+        },
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\03_remote_work_policy.txt"
+          }
+        },
+        {
+          "text": "All employees must protect company information systems from unauthorized access. Passwords must meet complexity requirements and be changed every 90 days. Multi‑factor authentication is required for all administrative accounts. Employees must not install unapproved software or connect personal storage devices to company systems. Security incidents must be reported immediately to the IT Security Team.",
+          "meta": {
+            "source": "data\\policies_raw\\04_information_security_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.262,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 16,
+      "topic": "acceptable_use",
+      "question": "What types of websites are prohibited on company devices?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt"
+          }
+        },
+        {
+          "text": "All employees must protect company information systems from unauthorized access. Passwords must meet complexity requirements and be changed every 90 days. Multi‑factor authentication is required for all administrative accounts. Employees must not install unapproved software or connect personal storage devices to company systems. Security incidents must be reported immediately to the IT Security Team.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\04_information_security_policy.txt"
+          }
+        },
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\03_remote_work_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.236,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 17,
+      "topic": "data_privacy",
+      "question": "How should employees handle confidential personal information?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company is committed to protecting personal and sensitive data. Employees must collect only the minimum data necessary for business operations. Personal data must be stored securely and accessed only by authorized personnel. Data transfers to external parties require approval and must follow contractual and regulatory requirements. Data breaches must be reported within one hour of discovery.",
+          "meta": {
+            "source": "data\\policies_raw\\06_data_privacy_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.247,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 18,
+      "topic": "data_privacy",
+      "question": "Why is protecting employee and customer data important?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company is committed to protecting personal and sensitive data. Employees must collect only the minimum data necessary for business operations. Personal data must be stored securely and accessed only by authorized personnel. Data transfers to external parties require approval and must follow contractual and regulatory requirements. Data breaches must be reported within one hour of discovery.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\06_data_privacy_policy.txt"
+          }
+        },
+        {
+          "text": "All employees must protect company information systems from unauthorized access. Passwords must meet complexity requirements and be changed every 90 days. Multi‑factor authentication is required for all administrative accounts. Employees must not install unapproved software or connect personal storage devices to company systems. Security incidents must be reported immediately to the IT Security Team.",
+          "meta": {
+            "source": "data\\policies_raw\\04_information_security_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.247,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 19,
+      "topic": "safety",
+      "question": "What should employees do when they identify a workplace safety hazard?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Employees must follow all posted safety guidelines and use required protective equipment. Emergency exits must remain unobstructed. In the event of fire, employees must evacuate the building and assemble at designated meeting points. Workplace injuries must be reported immediately. Only trained personnel may operate machinery or safety‑critical equipment.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\07_workplace_safety_policy.txt"
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company maintains plans to ensure critical operations continue during disruptions. Employees must follow communication protocols during emergencies. IT systems will be restored according to priority tiers. Essential personnel may be required to work from alternate locations. Regular drills will be conducted to validate readiness.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\09_business_continuity_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.244,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 20,
+      "topic": "safety",
+      "question": "Who should safety incidents be reported to?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Employees must follow all posted safety guidelines and use required protective equipment. Emergency exits must remain unobstructed. In the event of fire, employees must evacuate the building and assemble at designated meeting points. Workplace injuries must be reported immediately. Only trained personnel may operate machinery or safety‑critical equipment.",
+          "meta": {
+            "source": "data\\policies_raw\\07_workplace_safety_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company prohibits harassment, discrimination, and hostile behavior based on race, gender, religion, age, disability, sexual orientation, or any protected characteristic. Employees experiencing or witnessing inappropriate conduct must report it to HR. Retaliation against individuals who report concerns is strictly prohibited. Violations may result in termination.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\08_anti_harassment_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.227,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 21,
+      "topic": "harassment",
+      "question": "Does the company tolerate workplace harassment?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company prohibits harassment, discrimination, and hostile behavior based on race, gender, religion, age, disability, sexual orientation, or any protected characteristic. Employees experiencing or witnessing inappropriate conduct must report it to HR. Retaliation against individuals who report concerns is strictly prohibited. Violations may result in termination.",
+          "meta": {
+            "source": "data\\policies_raw\\08_anti_harassment_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.245,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 22,
+      "topic": "harassment",
+      "question": "How should employees report harassment concerns?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company prohibits harassment, discrimination, and hostile behavior based on race, gender, religion, age, disability, sexual orientation, or any protected characteristic. Employees experiencing or witnessing inappropriate conduct must report it to HR. Retaliation against individuals who report concerns is strictly prohibited. Violations may result in termination.",
+          "meta": {
+            "source": "data\\policies_raw\\08_anti_harassment_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\03_remote_work_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.238,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 23,
+      "topic": "business_continuity",
+      "question": "What is the purpose of the business continuity policy?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company maintains plans to ensure critical operations continue during disruptions. Employees must follow communication protocols during emergencies. IT systems will be restored according to priority tiers. Essential personnel may be required to work from alternate locations. Regular drills will be conducted to validate readiness.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\09_business_continuity_policy.txt"
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.244,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 24,
+      "topic": "business_continuity",
+      "question": "What should employees do during a business disruption?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "The Company maintains plans to ensure critical operations continue during disruptions. Employees must follow communication protocols during emergencies. IT systems will be restored according to priority tiers. Essential personnel may be required to work from alternate locations. Regular drills will be conducted to validate readiness.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\09_business_continuity_policy.txt"
+          }
+        },
+        {
+          "text": "Employees must follow all posted safety guidelines and use required protective equipment. Emergency exits must remain unobstructed. In the event of fire, employees must evacuate the building and assemble at designated meeting points. Workplace injuries must be reported immediately. Only trained personnel may operate machinery or safety‑critical equipment.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\07_workplace_safety_policy.txt"
+          }
+        },
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.247,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 25,
+      "topic": "procurement",
+      "question": "Who is authorized to approve purchases from vendors?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "All purchases must follow approved procurement procedures. Vendors must undergo risk assessment before onboarding. Contracts must be reviewed by Legal and include confidentiality clauses. Employees must not accept gifts or incentives from vendors. Performance reviews of vendors will be conducted annually to ensure compliance with service expectations.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\10_procurement_vendor_policy.txt"
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt"
+          }
+        },
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\03_remote_work_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.247,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 26,
+      "topic": "procurement",
+      "question": "Why does the company evaluate vendors before doing business with them?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "All purchases must follow approved procurement procedures. Vendors must undergo risk assessment before onboarding. Contracts must be reviewed by Legal and include confidentiality clauses. Employees must not accept gifts or incentives from vendors. Performance reviews of vendors will be conducted annually to ensure compliance with service expectations.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\10_procurement_vendor_policy.txt"
+          }
+        },
+        {
+          "text": "The Company expects all employees to maintain professional behavior, comply with applicable laws, and uphold ethical standards. Employees must treat colleagues, customers, and partners with respect. Harassment, discrimination, or retaliation of any kind is prohibited. Confidential information must not be shared outside authorized channels. Conflicts of interest must be disclosed to management. Employees are responsible for safeguarding company assets and reporting misconduct promptly.",
+          "meta": {
+            "source": "data\\policies_raw\\01_employee_code_of_conduct.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.23,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 27,
+      "topic": "benefits",
+      "question": "What benefits are available to full-time employees?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Benefits Policy The company provides a comprehensive benefits package to all full-time employees. Eligible full-time employees receive: - Medical health insurance - Dental insurance - Vision insurance - Life insurance - Access to employee assistance programs Health insurance coverage becomes effective on the first day of the month following employment eligibility requirements. Part-time employees may not be eligible for all benefit programs. Employees should contact Human Resources with questions regarding benefits enrollment, coverage, or eligibility.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\11_benefits_policy.txt"
+          }
+        },
+        {
+          "text": "Paid Time Off (PTO) Policy The company provides paid time off to eligible full-time employees. Full-time employees receive 20 PTO days per calendar year. PTO may be used for vacation, personal business, illness, or other approved absences. Employees should submit PTO requests through the company's timekeeping system and obtain manager approval whenever possible. Unused PTO will be handled according to applicable company policy and local regulations. Questions regarding PTO balances and requests should be directed to Human Resources.",
+          "meta": {
+            "source": "data\\policies_raw\\12_paid_time_off_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.249,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 28,
+      "topic": "benefits",
+      "question": "Are dental and vision insurance included in the benefits package?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Benefits Policy The company provides a comprehensive benefits package to all full-time employees. Eligible full-time employees receive: - Medical health insurance - Dental insurance - Vision insurance - Life insurance - Access to employee assistance programs Health insurance coverage becomes effective on the first day of the month following employment eligibility requirements. Part-time employees may not be eligible for all benefit programs. Employees should contact Human Resources with questions regarding benefits enrollment, coverage, or eligibility.",
+          "meta": {
+            "source": "data\\policies_raw\\11_benefits_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "All purchases must follow approved procurement procedures. Vendors must undergo risk assessment before onboarding. Contracts must be reviewed by Legal and include confidentiality clauses. Employees must not accept gifts or incentives from vendors. Performance reviews of vendors will be conducted annually to ensure compliance with service expectations.",
+          "meta": {
+            "source": "data\\policies_raw\\10_procurement_vendor_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Paid Time Off (PTO) Policy The company provides paid time off to eligible full-time employees. Full-time employees receive 20 PTO days per calendar year. PTO may be used for vacation, personal business, illness, or other approved absences. Employees should submit PTO requests through the company's timekeeping system and obtain manager approval whenever possible. Unused PTO will be handled according to applicable company policy and local regulations. Questions regarding PTO balances and requests should be directed to Human Resources.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\12_paid_time_off_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.231,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 29,
+      "topic": "pto",
+      "question": "How many PTO days do full-time employees receive annually?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Paid Time Off (PTO) Policy The company provides paid time off to eligible full-time employees. Full-time employees receive 20 PTO days per calendar year. PTO may be used for vacation, personal business, illness, or other approved absences. Employees should submit PTO requests through the company's timekeeping system and obtain manager approval whenever possible. Unused PTO will be handled according to applicable company policy and local regulations. Questions regarding PTO balances and requests should be directed to Human Resources.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\12_paid_time_off_policy.txt"
+          }
+        },
+        {
+          "text": "Benefits Policy The company provides a comprehensive benefits package to all full-time employees. Eligible full-time employees receive: - Medical health insurance - Dental insurance - Vision insurance - Life insurance - Access to employee assistance programs Health insurance coverage becomes effective on the first day of the month following employment eligibility requirements. Part-time employees may not be eligible for all benefit programs. Employees should contact Human Resources with questions regarding benefits enrollment, coverage, or eligibility.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\11_benefits_policy.txt"
+          }
+        },
+        {
+          "text": "Employees are expected to adhere to their assigned work schedules. Standard business hours are 8:00 AM to 5:00 PM, Monday through Friday. Absences must be reported to supervisors before the start of the shift. Excessive tardiness or unapproved absences may result in disciplinary action. Remote employees must remain available during core hours and respond to communication within reasonable timeframes.",
+          "meta": {
+            "source": "data\\policies_raw\\02_attendance_work_hours.txt",
+            "chunk_id": 0
+          }
+        }
+      ],
+      "latency_seconds": 0.263,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    },
+    {
+      "id": 30,
+      "topic": "pto",
+      "question": "What can employees use PTO for?",
+      "answer": "LLM error: 401 Client Error: Unauthorized for url: https://api.groq.com/openai/v1/chat/completions",
+      "citations": [],
+      "snippets": [
+        {
+          "text": "Paid Time Off (PTO) Policy The company provides paid time off to eligible full-time employees. Full-time employees receive 20 PTO days per calendar year. PTO may be used for vacation, personal business, illness, or other approved absences. Employees should submit PTO requests through the company's timekeeping system and obtain manager approval whenever possible. Unused PTO will be handled according to applicable company policy and local regulations. Questions regarding PTO balances and requests should be directed to Human Resources.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\12_paid_time_off_policy.txt"
+          }
+        },
+        {
+          "text": "Remote work arrangements require approval from management. Employees must maintain a secure workspace, ensure reliable internet connectivity, and follow all cybersecurity guidelines. Company data accessed remotely must be stored only on approved devices. Employees must attend virtual meetings on time and maintain professional conduct. The Company reserves the right to revoke remote work privileges at any time.",
+          "meta": {
+            "source": "data\\policies_raw\\03_remote_work_policy.txt",
+            "chunk_id": 0
+          }
+        },
+        {
+          "text": "Company technology resources, including computers, networks, and communication tools, must be used primarily for business purposes. Employees may not access inappropriate websites, engage in illegal activities, or use company systems for personal gain. Email and messaging systems must not be used to transmit confidential information without proper encryption. Violations may result in loss of access privileges or disciplinary action.",
+          "meta": {
+            "chunk_id": 0,
+            "source": "data\\policies_raw\\05_acceptable_use_policy.txt"
+          }
+        }
+      ],
+      "latency_seconds": 0.267,
+      "citation_accuracy_score": 0.0,
+      "groundedness_score": 1.0
+    }
+  ]
+}

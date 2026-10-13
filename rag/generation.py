@@ -1,59 +1,131 @@
 import os
+import requests
+
 from dotenv import load_dotenv
+
+from rag.retrieval import retrieve
+from rag.guardrails import (
+    is_in_scope,
+    format_context,
+    refusal_message,
+    sanitize
+)
+
 load_dotenv()
 
-import requests
-from rag.retrieval import retrieve
-from rag.guardrails import is_in_scope, format_context, refusal_message, sanitize
-
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-LLM_MODEL = os.getenv("LLM_MODEL", "mixtral-8x7b-32768")
+LLM_MODEL = os.getenv("LLM_MODEL", "llama3-8b-8192")
 
-def call_llm(prompt):
-    url = "https://api.groq.com/v1/chat/completions"
+GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
+
+
+def call_llm(prompt: str) -> str:
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {GROQ_API_KEY}"
     }
 
     payload = {
-        "model": "llama3-8b-8192",
+        "model": LLM_MODEL,
         "messages": [
-            {"role": "user", "content": prompt}
-        ]
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        "temperature": 0.1
     }
 
-    response = requests.post(url, headers=headers, json=payload)
-    response.raise_for_status()
-    return response.json()["choices"][0]["message"]["content"]
-
-def answer_query(query: str):
-    if not is_in_scope(query):
-        return {"answer": refusal_message(), "citations": []}
-
-    chunks = retrieve(query, k=3)
-    context = format_context(chunks)
-
-    prompt = (
-        "You are a company policy assistant.\n"
-        "Answer ONLY using the context provided.\n"
-        "If the answer is not in the context, say so.\n\n"
-        "CONTEXT (each item includes SOURCE + CHUNK ID):\n"
-        f"{context}\n\n"
-        "QUESTION:\n"
-        f"{query}\n\n"
-        "INSTRUCTIONS:\n"
-        "- Use only information from the context.\n"
-        "- Cite sources using: (SOURCE: X, CHUNK: Y).\n"
-        "- Keep the answer concise.\n\n"
-        "ANSWER:\n"
+    response = requests.post(
+        GROQ_URL,
+        headers=headers,
+        json=payload,
+        timeout=60
     )
 
-    answer = call_llm(prompt)
-    citations = list({c["meta"]["source"] for c in chunks})
+    response.raise_for_status()
+
+    data = response.json()
+
+    return data["choices"][0]["message"]["content"]
+
+
+def answer_query(query: str):
+    """
+    Main RAG pipeline:
+      1. Check scope
+      2. Retrieve chunks
+      3. Build context
+      4. Generate answer
+      5. Return answer + citations + snippets
+    """
+
+    if not is_in_scope(query):
+        return {
+            "answer": refusal_message(),
+            "citations": [],
+            "snippets": []
+        }
+
+    chunks = retrieve(query, k=3)
+
+    if not chunks:
+        return {
+            "answer": "No relevant information was found in the policy documents.",
+            "citations": [],
+            "snippets": []
+        }
+
+    context = format_context(chunks)
+
+    prompt = f"""
+You are a company policy assistant.
+
+Answer ONLY using the provided context.
+
+If the answer cannot be found in the context, explicitly say:
+
+"The answer is not available in the provided policy documents."
+
+CONTEXT:
+{context}
+
+QUESTION:
+{query}
+
+INSTRUCTIONS:
+- Use only facts from the context.
+- Do not invent information.
+- Keep the response concise.
+- Include source references when possible.
+- Cite using the format:
+  (SOURCE: source_name, CHUNK: chunk_id)
+
+ANSWER:
+"""
+
+    try:
+        answer = call_llm(prompt)
+
+    except Exception as ex:
+        return {
+            "answer": f"LLM error: {str(ex)}",
+            "citations": [],
+            "snippets": chunks
+        }
+
+    citations = sorted(
+        list(
+            {
+                chunk["meta"]["source"]
+                for chunk in chunks
+                if "source" in chunk["meta"]
+            }
+        )
+    )
 
     return {
-        "answer": answer,
+        "answer": sanitize(answer),
         "citations": citations,
         "snippets": chunks
     }

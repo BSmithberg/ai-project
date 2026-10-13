@@ -2,7 +2,7 @@
   {
     "id": 1,
     "topic": "pto",
-    "question": "How many PTO days do employees receive per year?"
+    "question": "How many Paid Time OFF (PTO) days do employees receive per year?"
   },
   {
     "id": 2,
@@ -23,5 +23,130 @@
     "id": 5,
     "topic": "security",
     "question": "What should employees do if they suspect a security breach?"
+  },
+  {
+    "id": 6,
+    "topic": "conduct",
+    "question": "What are employees expected to do when interacting with coworkers and customers?"
+  },
+  {
+    "id": 7,
+    "topic": "conduct",
+    "question": "What happens if an employee violates the code of conduct?"
+  },
+  {
+    "id": 8,
+    "topic": "attendance",
+    "question": "What are the standard working hours for employees?"
+  },
+  {
+    "id": 9,
+    "topic": "attendance",
+    "question": "What should an employee do if they are going to be late for work?"
+  },
+  {
+    "id": 10,
+    "topic": "attendance",
+    "question": "Who should employees notify when absent from work?"
+  },
+  {
+    "id": 11,
+    "topic": "remote_work",
+    "question": "What equipment is required for remote work?"
+  },
+  {
+    "id": 12,
+    "topic": "remote_work",
+    "question": "Are remote employees required to maintain a productive work environment?"
+  },
+  {
+    "id": 13,
+    "topic": "security",
+    "question": "How should employees respond to suspected security incidents?"
+  },
+  {
+    "id": 14,
+    "topic": "security",
+    "question": "What should employees do to protect company information?"
+  },
+  {
+    "id": 15,
+    "topic": "acceptable_use",
+    "question": "Can company computers be used for personal purposes?"
+  },
+  {
+    "id": 16,
+    "topic": "acceptable_use",
+    "question": "What types of websites are prohibited on company devices?"
+  },
+  {
+    "id": 17,
+    "topic": "data_privacy",
+    "question": "How should employees handle confidential personal information?"
+  },
+  {
+    "id": 18,
+    "topic": "data_privacy",
+    "question": "Why is protecting employee and customer data important?"
+  },
+  {
+    "id": 19,
+    "topic": "safety",
+    "question": "What should employees do when they identify a workplace safety hazard?"
+  },
+  {
+    "id": 20,
+    "topic": "safety",
+    "question": "Who should safety incidents be reported to?"
+  },
+  {
+    "id": 21,
+    "topic": "harassment",
+    "question": "Does the company tolerate workplace harassment?"
+  },
+  {
+    "id": 22,
+    "topic": "harassment",
+    "question": "How should employees report harassment concerns?"
+  },
+  {
+    "id": 23,
+    "topic": "business_continuity",
+    "question": "What is the purpose of the business continuity policy?"
+  },
+  {
+    "id": 24,
+    "topic": "business_continuity",
+    "question": "What should employees do during a business disruption?"
+  },
+  {
+    "id": 25,
+    "topic": "procurement",
+    "question": "Who is authorized to approve purchases from vendors?"
+  },
+  {
+    "id": 26,
+    "topic": "procurement",
+    "question": "Why does the company evaluate vendors before doing business with them?"
+  },
+  {
+    "id": 27,
+    "topic": "benefits",
+    "question": "What benefits are available to full-time employees?"
+  },
+  {
+    "id": 28,
+    "topic": "benefits",
+    "question": "Are dental and vision insurance included in the benefits package?"
+  },
+  {
+    "id": 29,
+    "topic": "pto",
+    "question": "How many PTO days do full-time employees receive annually?"
+  },
+  {
+    "id": 30,
+    "topic": "pto",
+    "question": "What can employees use PTO for?"
   }
 ]

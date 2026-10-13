@@ -1,21 +1,26 @@
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
 
 import chromadb
-import voyageai
+from sentence_transformers import SentenceTransformer
 
-EMBED_MODEL = os.getenv("EMBEDDING_MODEL", "voyage-large-2")
-VOYAGE_API_KEY = os.getenv("VOYAGE_API_KEY")
+EMBED_MODEL = os.getenv(
+    "EMBEDDING_MODEL",
+    "all-MiniLM-L6-v2"
+)
 
-voyage = voyageai.Client(api_key=VOYAGE_API_KEY)
+model = SentenceTransformer(EMBED_MODEL)
 
 client = chromadb.PersistentClient(path="data/chroma")
 collection = client.get_collection("policies")
 
+
 def embed_query(query: str):
-    response = voyage.embed([query], model=EMBED_MODEL)
-    return response.embeddings[0]
+    embedding = model.encode(query)
+    return embedding.tolist()
+
 
 def retrieve(query: str, k: int = 3):
     query_embedding = embed_query(query)
@@ -26,7 +31,11 @@ def retrieve(query: str, k: int = 3):
     )
 
     chunks = []
-    for text, meta in zip(results["documents"][0], results["metadatas"][0]):
+
+    for text, meta in zip(
+        results["documents"][0],
+        results["metadatas"][0]
+    ):
         chunks.append({
             "text": text,
             "meta": meta

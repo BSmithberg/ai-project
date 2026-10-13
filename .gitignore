@@ -1,20 +1,14 @@
-# Virtual Environments
+# virtual env
 ai-project/
 venv/
-.venv/
+.env
 
-# Python
+# python
 __pycache__/
 *.pyc
-*.pyo
 
-# Chroma DB
+# chroma
 data/chroma/
 
-# HuggingFace cache
-.cache/
-
-# OS files
-Thumbs.db
-.DS_Store
-`
+# evaluation cache
+*.sqlite3

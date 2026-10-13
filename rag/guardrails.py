@@ -1,9 +1,7 @@
 import re
 
 def is_in_scope(query: str) -> bool:
-    q = query.lower()
-    keywords = ["policy", "security", "access", "procedure", "guideline", "compliance"]
-    return any(k in q for k in keywords)
+    return True
 
 def refusal_message() -> str:
     return "I can only answer questions about company policies based on the provided documents."

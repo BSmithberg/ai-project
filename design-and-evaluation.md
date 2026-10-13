@@ -7,15 +7,15 @@
 **Core components:**
 
 - **Ingestion:** Load, chunk, embed documents and store them in Chroma.
-- **Retrieval:** Top‑k semantic search over embedded chunks.
-- **Generation:** Groq LLM (llama‑3.1‑70b‑versatile) constrained by retrieved context.
+- **Retrieval:** Top-k semantic search over embedded chunks.
+- **Generation:** Groq (LLM_MODEL=mixtral-8x7b-32768) constrained by retrieved context.
 - **Evaluation:** Groundedness, citation accuracy, and latency (p50/p95).
 
 ## Architecture
 
 - **Backend:** Python + Flask (`app.py`)
 - **Vector store:** Chroma (DuckDB + Parquet, cosine space)
-- **Embeddings:** VoyageAI (`voyage-3`)
+- **Embeddings:** Sentence_Transformers-2 (all-MiniLM-L6-v2)
 - **LLM:** Groq (`llama-3.1-70b-versatile`)
 - **Packages:**
   - `ingestion/` — `load_docs.py`, `chunk_docs.py`, `embed_store.py`
@@ -28,7 +28,7 @@
 
 - **Sources:** Files under `data/policies_raw/` (e.g., `.md`, `.txt`, `.pdf` via parser).
 - **Chunking:**
-  - Approximate token‑based chunking using word counts.
+  - Approximate token-based chunking using word counts.
   - Max chunk size ≈ 512 words, overlap ≈ 64 words.
   - Rationale: balance between enough context and avoiding prompt bloat.
 
@@ -40,7 +40,7 @@
 
 ### Retrieval
 
-- **Top‑k:** `k = 5` chunks per query.
+- **Top-k:** `k = 5` chunks per query.
 - **Query:** Chroma semantic query using the user’s question.
 - **Returned data:** `id`, `text`, `meta` (source, chunk_id).
 
@@ -89,6 +89,6 @@
 This design provides:
 
 - A clear, modular RAG pipeline.
-- Strong embeddings (VoyageAI) and fast LLM (Groq).
+- Strong embeddings (Sentence_Transformers-2.7.0) and fast LLM (Groq(LLM_MODEL=mixtral-8x7b-32768).
 - Explicit evaluation scripts for groundedness, citation accuracy, and latency.
 - A structure that is easy to extend (re‑ranking, better guardrails, more questions) if needed.
