@@ -6,10 +6,10 @@ This project implements a full Retrieval-Augmented Generation (RAG) system that 
 
 ## 🚀 Features
 
-- **RAG pipeline** using VoyageAI embeddings + Chroma vector store  
-- **LLM generation** using Groq (llama‑3.1‑70b‑versatile)  
+- **RAG pipeline** using Sentence_Transformers-2 (all-MiniLM-L6-v2) + Chroma vector store  
+- **LLM generation** using Groq (mixtral-8x7b-32768)  
 - **Citations** for every answer (source + chunk ID)  
-- **Guardrails** restricting responses to policy‑related questions  
+- **Guardrails** restricting responses to policy-related questions  
 - **Flask web app** with `/`, `/chat`, `/health` endpoints  
 - **Evaluation scripts** for groundedness, citation accuracy, and latency  
 - **Deployment-ready** for Render/Railway  
@@ -61,9 +61,9 @@ AI_RAG_Project/
 
 ### 2. Create a virtual environment
 
-python -m venv .venv
+python -m venv .ai-project
 source .venv/bin/activate   # macOS/Linux
-.\.venv\Scripts\activate    # Windows
+.\ai-project\Scripts\activate    # Windows
 
 
 ### 3. Install dependencies
@@ -76,11 +76,14 @@ pip install -r requirements.txt
 
 Create a `.env` file in the project root:
 
-GROQ_API_KEY=your_groq_key_here
-VOYAGE_API_KEY=your_voyage_key_here
+# .env.example
 
-LLM_MODEL=llama-3.1-70b-versatile
-EMBEDDING_MODEL=voyage-3
+GROQ_API_KEY=your_groq_api_key_here
+
+LLM_MODEL=llama3-8b-8192
+
+EMBEDDING_MODEL=all-MiniLM-L6-v2
+``
 
 ---
 
@@ -142,7 +145,7 @@ Contains:
 - Answer  
 - Citations  
 - Retrieved snippets  
-- Manual scoring fields  
+- Automated scoring fields for groundness and citation accuracy
 
 ### 2. Latency (p50 / p95)
 
